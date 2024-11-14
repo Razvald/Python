@@ -8,10 +8,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2  # Убедитесь, что указана версия `@v2`
+        uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v2  # Также убедитесь, что указана версия `@v2`
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
 
@@ -26,7 +26,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload test report
-        uses: actions/upload-artifact@v2  # Версия должна быть указана
+        uses: actions/upload-artifact@v3  # Здесь изменили на `v3`
         with:
           name: report
           path: 11Lab/report.xml
