@@ -22,7 +22,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest 11Lab/test_math_functions.py --junitxml=11Lab/report.xml
+          pytest 11Lab/main_test.py --junitxml=11Lab/report.xml
         continue-on-error: true
 
       - name: Upload test report
