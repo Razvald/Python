@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Run tests') {
             steps {
-                sh 'pytest 11Lab/test_math_functions.py --junitxml=11Lab/report.xml'
+                sh 'pytest 11Lab/main_test.py --junitxml=11Lab/report.xml'
             }
         }
         stage('Archive Results') {
